@@ -1,0 +1,555 @@
+/*Estilo do codigo abordando tudo.*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Estilo do body do codigo*/
+body {
+	font-family: "Kosugi Maru", sans-serif;
+	background-color: #f5f5f5;
+	background: #9c1e2e;
+	background: linear-gradient(180deg, #9c1e2e, #181815);
+	background-attachment: fixed;
+}
+
+/*Fonte para letras japonesas ficarem melhores*/
+.kosugi-maru-regular {
+	font-family: "Kosugi Maru", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+/*Header onde se encontra a navbar*/
+header {
+	/*background-color: #191919;*/
+	text-align: center;
+}
+
+/**Navnar com o titulo do site e os links do site**/
+.navbar {
+	background-color: #191919;
+	padding: 10px 20px;
+}
+
+.navbar h1 {
+	color: #fff;
+	margin: 0;
+}
+
+.navbar img {
+	max-width: 80px;
+	height: auto;
+}
+
+.navbar a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 8px;
+}
+
+/*navbar destacando o botao */
+.navbar a:hover {
+	background-color: #9c1e2e;
+	color: #191919;
+}
+
+/*Botão da navbar*/
+.botao-navbar {
+	margin-top: 30px;
+	background-color: #9c1e2e;
+	color: #fff;
+}
+
+/*Lista nao ordenado com os links do site*/
+ul {
+	display: flex;
+	list-style: none;
+	margin-top: 30px;
+	padding: 0;
+	flex-direction: row;
+	justify-content: center;
+}
+
+/*Indicador de função do site*/
+.funcional {
+	color: #9c1e2e;
+	background-color: #9c1e2e;
+}
+
+/*Container Principal com todas o conteudo do codigo*/
+.container-principal {
+	padding: 50px 20px;
+	/*background-color: #191919;*/
+	color: white;
+	text-align: center;
+}
+
+/*Conteudo da primeira parte do codigo*/
+.primeira-parte {
+	margin-top: 30px;
+}
+.primeira-parte-imagem {
+	max-width: 100%;
+}
+
+.primeira-parte-imagem img {
+	max-width: 1200px;
+	height: auto;
+	border: 5px solid #191919;
+}
+
+.primeira-parte-conteudo {
+	flex: 0 0 calc(66.666% - 20px);
+	margin-top: 100px;
+	float: right;
+	display: flex;
+	flex-direction: row;
+	margin-right: 100px;
+	transition: transform 0.3s ease;
+	text-align: right;
+	position: sticky;
+}
+
+.primeira-parte-conteudo h2 {
+	font-size: 100px;
+	margin-right: 5px;
+	margin-left: auto;
+}
+
+.primeira-parte-conteudo h3 {
+	font-size: 30px;
+	margin-left: auto;
+}
+
+.primeira-parte-conteudo:hover h2 {
+	transform: translateY(-10px);
+}
+
+.primeira-parte-conteudo:hover h3 {
+	transform: translateY(-10px);
+}
+
+.bem-vindo {
+	margin-top: 100px;
+	align-items: center;
+}
+
+/** Card da primeira parte**/
+.primeira-parte-card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.primeira-parte-card-conteudo {
+	flex: 1 1 calc(33.333% - 20px);
+	margin: 10px;
+	padding: 20px;
+	background-color: #191919;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	transition: transform 0.3s ease;
+}
+
+.primeira-parte-card-conteudo h4 {
+	margin-top: 15px;
+	color: red;
+}
+
+.primeira-parte-card-conteudo:hover {
+	transform: translateY(-10px);
+}
+
+.primeira-parte-card-conteudo img {
+	max-width: 100%;
+	height: 700px;
+	border-radius: 10px;
+}
+
+.reviews {
+	color: #fff;
+}
+
+.preco-loja {
+	color: #fff;
+}
+
+/* Rodape */
+.rodape {
+	color: white;
+	margin-top: 30px;
+	background-color: #191919;
+	padding: 20px;
+	text-align: center;
+	font-size: 15px;
+}
+
+.rodape a {
+	color: white;
+}
+
+/* Atracoes do parque*/
+.atracoes-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.atracoes-container h2 {
+	/* margin-top: 30px 0px 30px 0px; */
+	margin: 30px 0px 0px 0px;
+	font-size: 40px;
+}
+
+/*Atracoes do lado esquerdo da pagina*/
+.atracoes-card-esquerda {
+	margin-top: 40px;
+	margin-left: 30px;
+	font-size: 20px;
+	margin-right: 30px;
+	text-align: right;
+	justify-content: center;
+}
+
+.atracoes-imagem-esquerda img {
+	margin-top: 30px;
+	max-width: 50%;
+	float: left;
+	margin-left: 10px;
+	border: 5px solid #191919;
+	border-radius: 8px;
+}
+
+.atracoes-titulo {
+	margin-top: 40px;
+	font-size: 40px;
+	padding-left: 10px;
+}
+
+.atracoes-subtitulo {
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.atracoes-card-esquerda p {
+	margin-top: 50px;
+	font-size: 20px;
+	text-align: right;
+	justify-content: space-between;
+}
+
+.atracoes-card-esquerda button {
+	margin-top: 80px;
+	margin-left: 400px;
+	top: 50%;
+	background-color: #9c1e2e;
+	color: #fff;
+	padding: 14px 40px;
+	align-items: right;
+	border-radius: 8px;
+}
+
+/*Atracoes do lado direito da pagina*/
+.atracoes-imagem-direita img {
+	margin-top: 30px;
+	max-width: 50%;
+	float: right;
+	margin-right: 10px;
+	border: 5px solid #191919;
+	border-radius: 8px;
+}
+
+.atracoes-card-direita {
+	margin-top: 50px;
+	margin-right: 10px;
+	font-size: 20px;
+	margin-left: 30px;
+	text-align: left;
+	justify-content: center;
+}
+
+.atracoes-card-direita p {
+	margin-top: 50px;
+	font-size: 20px;
+}
+
+.atracoes-card-direita button {
+	margin-top: 80px;
+	margin-right: 400px;
+	top: 50%;
+	background-color: #9c1e2e;
+	color: #fff;
+	padding: 14px 40px;
+	align-items: left;
+	border-radius: 8px;
+}
+
+/*Culinaria do parque*/
+.video {
+	margin-top: 30px;
+	border: 5px solid #191919;
+}
+
+.video video {
+	max-height: 600px;
+}
+
+.imagem-bebidas img {
+	max-width: 600px;
+}
+
+.imagem-bebidas {
+	margin-top: 30px;
+	border: 5px solid #191919;
+}
+
+.culinaria-japonesa {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.culinaria-japonesa-container,
+.culinaria-japonesa-container2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 32px;
+}
+
+.culinaria-japonesa-container .video,
+.culinaria-japonesa-container2 .video {
+	width: auto;
+	margin-bottom: 16px;
+}
+
+.culinaria-japonesa-container h4,
+.culinaria-japonesa-container2 h4 {
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+.culinaria-japonesa-container p,
+.culinaria-japonesa-container2 p {
+	text-align: center;
+}
+
+.imagem-bebidas {
+	width: 80%;
+	margin-bottom: 16px;
+}
+
+.loja-principal h1 {
+	text-align: center;
+	padding: 0 0 20px 0;
+	margin-top: 30px;
+	color: #fff;
+	font-size: 50px;
+}
+
+.loja-principal h2 {
+	text-align: center;
+	padding: 0 0 20px 0;
+	color: #fff;
+}
+
+.loja-bebidas {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.loja-bebidas-titulo,
+.loja-bebidas-subtitulo {
+	text-align: center;
+}
+
+.loja-bebidas > * {
+	flex-shrink: 0;
+	flex: 1 1 160px;
+}
+
+.loja-bebidas h4 {
+	margin: 30px 0px 0px 0px;
+	font-size: 40px;
+}
+
+.loja-bebidas-imagem img {
+	margin-top: 30px;
+	max-width: 600px;
+	float: left;
+	margin-left: 10px;
+	border: 5px solid #191919;
+	border-radius: 8px;
+}
+
+.loja-bebidas-titulo {
+	flex-shrink: 0;
+	margin-top: 40px;
+	margin-bottom: 20px; /* Add this line */
+	font-size: 40px;
+	padding-left: 10px;
+}
+
+.loja-bebidas-subtitulo {
+	flex-shrink: 0;
+	margin-top: 0px;
+	font-size: 20px;
+	margin-left: 22%;
+	flex-wrap: wrap;
+}
+
+/*Avaliacoes Clientes*/
+.avaliacoes {
+	display: flex;
+	flex-direction: column;
+	margin: 50px 300px;
+}
+
+/*Avaliacoes Clientes lado esquerdo*/
+.avaliacoes-esquerda {
+	border: 2px solid #191919;
+	background-color: #191919;
+	border-radius: 5px;
+	padding: 16px;
+	margin: 16px 0;
+}
+
+.avaliacoes-esquerda::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.avaliacoes-esquerda p {
+	text-align: left;
+	color: #fff;
+}
+
+.avaliacoes-esquerda img {
+	float: left;
+	margin-right: 20px;
+	border-radius: 50%;
+}
+
+.avaliacoes-esquerda span {
+	font-size: 20px;
+	margin-right: 15px;
+	color: red;
+}
+
+/*Avaliacoes Clientes lado direito*/
+.avaliacoes-direita {
+	border: 2px solid #191919;
+	background-color: #191919;
+	border-radius: 5px;
+	padding: 16px;
+	margin: 16px 0;
+}
+
+.avaliacoes-direita::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.avaliacoes-direita p {
+	text-align: right;
+	color: #fff;
+}
+
+.avaliacoes-direita img {
+	float: right;
+	margin-left: 20px;
+	border-radius: 50%;
+}
+
+.avaliacoes-direita span {
+	font-size: 20px;
+	margin-right: 25px;
+	color: red;
+}
+
+/*Sobre*/
+.sobre-principal {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sobre-principal h1 {
+	margin-top: 50px;
+	font-size: 40px;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+.sobre-principal p {
+	font-size: 20px;
+	color: #fff;
+}
+
+.sobre-principal h2 {
+	margin-top: 50px;
+	font-size: 30px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+.sobre-principal a {
+	font-size: 20px;
+	color: #fff;
+}
+
+#introducao p {
+	margin-top: 50px;
+	font-size: 20px;
+	text-align: center;
+}
+
+/*Inicio do style do formulario*/
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.centro h1 {
+	text-align: center;
+	padding: 0 0 20px 0;
+	margin-top: 30px;
+}
+
+.centro {
+	text-align: center;
+	color: #fff;
+}
+
+centro h1 {
+	color: #fff;
+	font-size: 30px;
+}
+
+form {
+	border-bottom: 2px solid #191919;
+	color: #fff;
+}
+
+input {
+	outline: none;
+	border: 2px solid #191919;
+	border-radius: 10px;
+	margin: 8px;
+	padding: 12px 20px;
+}
+
+.botao-enviar input {
+	color: #fff;
+	background-color: #9c1e2e;
+}

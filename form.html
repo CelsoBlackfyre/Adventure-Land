@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Criar Conta</title>
+		<link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<!--Navbar do site com redirecionamentos para outras paginas-->
+		<header>
+			<nav class="navbar">
+				<h1>Adventure Land<br />冒險樂園</h1>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="loja.html">Loja</a></li>
+					<li><a href="alimentacao.html">Alimentação</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a class="funcional" href="form.html">Criar Conta</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!--Inicio do formulario de criação de conta-->
+		<div class="container">
+			<div class="centro">
+				<h1>Criar Conta</h1>
+				<form action="#" method="get">
+					<div class="nome-form">
+						<label for="nome">Nome:</label><br />
+						<input
+							type="text"
+							name="nome"
+							required
+							minlength="3"
+							maxlength="50"
+							placeholder="Digite seu nome" /><br />
+					</div>
+
+					<div class="email-form">
+						<label for="email"> E-mail: </label><br />
+						<input
+							type="email"
+							id="email"
+							name="email"
+							required
+							placeholder="Digite seu email" /><br />
+					</div>
+
+					<div class="telefone-form">
+						<label for="telefone">Telefone:</label><br />
+						<input
+							type="tel"
+							id="telefone"
+							name="telefone"
+							pattern="[0-9] {10}"
+							required
+							placeholder="Digite seu telefone" /><br />
+					</div>
+
+					<div class="idade-form">
+						<label for="idade">Idade:</label><br />
+						<input
+							type="number"
+							id="idade"
+							name="idade"
+							min="18"
+							max="120"
+							required
+							placeholder="Idade" /><br />
+					</div>
+
+					<div class="endereco-form">
+						<label for="endereco">Endereço:</label><br />
+						<input
+							type="text"
+							id="endereco"
+							name="endereco"
+							required
+							placeholder="Digite seu endereço" /><br />
+					</div>
+
+					<div class="cidade-form">
+						<label for="cidade">Cidade:</label><br />
+						<input
+							type="text"
+							name="cidade"
+							id="cidade"
+							required
+							placeholder="Digite sua cidade" /><br />
+					</div>
+
+					<div class="senha-form">
+						<label for="senha">Senha:</label><br />
+						<input
+							type="password"
+							name="senha"
+							id="senha"
+							required
+							placeholder="Digite sua senha" /><br />
+					</div>
+
+					<div class="confirmar-senha-form">
+						<label for="confirmar_senha">Confirmar Senha:</label><br />
+						<input
+							type="password"
+							id="confirmar_senha"
+							name="confirmar_senha"
+							required
+							minlength="8" /><br />
+					</div>
+					<div class="botao-enviar">
+						<input type="submit" value="Enviar" />
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
