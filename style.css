@@ -557,3 +557,21 @@ input {
 	color: #fff;
 	background-color: #9c1e2e;
 }
+
+.centro-login {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+.centro-login h1 {
+	color: #fff;
+	font-size: 30px;
+}
+
+.container-login h2 {
+	margin-top: 20px;
+	color: #fff;
+	font-size: 20px;
+	margin-bottom: 50px;
+}
