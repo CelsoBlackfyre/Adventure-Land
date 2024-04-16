@@ -491,6 +491,10 @@ ul {
 	color: #fff;
 }
 
+#sobre-subtitulo {
+	margin-top: 0px;
+}
+
 .sobre-principal p {
 	font-size: 20px;
 	color: #fff;
