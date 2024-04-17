@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Login</title>
+		<title>Document</title>
 		<link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,6 +13,7 @@
 			rel="stylesheet" />
 	</head>
 	<body>
+		<!--Navbar do site-->
 		<header>
 			<nav class="navbar">
 				<!--Navbar do programa-->
@@ -23,35 +24,27 @@
 					<li><a href="alimentacao.html">Alimentação</a></li>
 					<li><a href="sobre.html">Sobre</a></li>
 					<li><a href="form.html">Criar Conta</a></li>
-					<li><a class="funcional" href="login.html">Login</a></li>
-					<li><a href="contato.html">Contato</a></li>
+					<li><a href="login.html">Login</a></li>
+					<li><a class="funcional" href="contato.html">Contato</a></li>
 				</ul>
 			</nav>
 		</header>
-		<div class="container-login">
-			<div class="centro-login">
-				<h1>Login</h1>
-				<h2>ログイン</h2>
-				<form action="#" method="get">
-					<div class="email-form">
-						<label for="email"> E-mail: </label><br />
-						<input
-							type="email"
-							id="email"
-							name="email"
-							required
-							placeholder="Digite seu email" /><br />
-					</div>
-					<div class="senha-form">
-						<label for="senha">Senha:</label><br />
-						<input
-							type="password"
-							name="senha"
-							id="senha"
-							required
-							placeholder="Digite sua senha" /><br />
-					</div>
-				</form>
+		<!--Formulario de contato-->
+		<div class="contato-container">
+			<label for="contato-label">Contato:</label>
+			<textarea
+				name="contatoEspaco"
+				id="contato"
+				cols="50"
+				rows="20"
+				placeholder="Escreva sua mensagem"></textarea
+			><br />
+			<input type="submit" value="Enviar" />
+			<div class="contato-imagem-lado">
+				<img src="imgs/undrawjapan.svg" alt="japan image" />
+			</div>
+			<div class="imagem-contato">
+				<img src="imgs/undrawamusement.svg" alt="amusement imagem" />
 			</div>
 		</div>
 	</body>

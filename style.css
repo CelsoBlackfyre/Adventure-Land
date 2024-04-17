@@ -535,7 +535,7 @@ ul {
 	color: #fff;
 }
 
-centro h1 {
+.centro h1 {
 	color: #fff;
 	font-size: 30px;
 }
@@ -574,4 +574,42 @@ input {
 	color: #fff;
 	font-size: 20px;
 	margin-bottom: 50px;
+}
+
+.contato-container {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contato-container input {
+	color: #fff;
+	background-color: #9c1e2e;
+}
+
+.contato-container label {
+	font-size: 30px;
+	margin-bottom: 50px;
+	color: #fff;
+}
+
+textarea {
+	font-size: 15px;
+	padding: 10px;
+	max-width: 100%;
+	line-height: 1.5;
+	border-radius: 5px;
+	border: 1px solid #191919;
+	box-shadow: 1px 1px 1px #191919;
+}
+
+.imagem-contato img {
+	flex-shrink: 0;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+
+.contato-imagem-lado {
+	flex-shrink: 0;
 }
