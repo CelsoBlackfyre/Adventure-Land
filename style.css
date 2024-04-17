@@ -27,7 +27,7 @@ header {
 	text-align: center;
 }
 
-/**Navnar com o titulo do site e os links do site**/
+/**Navbar com o titulo do site e os links do site**/
 .navbar {
 	background-color: #191919;
 	padding: 10px 20px;
@@ -345,7 +345,7 @@ ul {
 	width: 80%;
 	margin-bottom: 16px;
 }
-
+/*Informacoes da loja*/
 .loja-principal h1 {
 	text-align: center;
 	padding: 0 0 20px 0;
@@ -518,7 +518,7 @@ ul {
 	text-align: center;
 }
 
-/*Inicio do style do formulario*/
+/*Inicio do style do formulario de criar conta*/
 .container {
 	display: flex;
 	flex-direction: column;
@@ -527,7 +527,6 @@ ul {
 
 .centro h1 {
 	text-align: center;
-	padding: 0 0 20px 0;
 	margin-top: 30px;
 }
 
@@ -552,6 +551,8 @@ ul {
 form {
 	border-bottom: 2px solid #191919;
 	color: #fff;
+	display: flex;
+	flex-direction: column;
 }
 
 input {
@@ -579,6 +580,7 @@ input {
 	background-color: #9c1e2e;
 }
 
+/*Informacoes de login*/
 .container-login {
 	display: flex;
 	flex-direction: column;
@@ -593,15 +595,11 @@ input {
 
 .centro-login {
 	margin-top: 50px;
-	display: flex;
-	flex-direction: column;
 	align-items: center;
 }
 
 .centro-login input {
-	display: inline-block;
-	color: #191919;
-	width: 400px;
+	width: 100%;
 	align-items: center;
 	border: 2px solid #9c1e2e;
 	box-shadow: 5px 5px 5px #9c1e2e;
@@ -619,10 +617,27 @@ input {
 	margin-bottom: 50px;
 }
 
+.botao-logar-container input {
+	width: 100px;
+	color: #fff;
+	background-color: #9c1e2e;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.botao-esqueci-container input {
+	width: 240px;
+	background: none;
+	color: #fff;
+	box-shadow: none;
+	border: none;
+	font: italic;
+	text-decoration: underline;
+	padding-bottom: 200px;
+}
+/*Informacoes de contato*/
 .contato-container {
 	display: flex;
 	flex-direction: column;
-	flex: 1 1 calc(33.333% - 20px);
 	margin: 100px;
 	padding: 20px;
 	background-color: #191919;
@@ -636,7 +651,6 @@ input {
 .contato-container input {
 	color: #191919;
 	background-color: #fff;
-	box-shadow: 5px 5px 5px #9c1e2e;
 }
 
 .contato-container label {
@@ -660,20 +674,10 @@ textarea {
 	margin-top: 10px;
 }
 
-.imagem-contato img {
-	flex-shrink: 0;
-	flex-wrap: wrap;
-	margin-top: 50px;
-}
-
 .imagem-login img {
 	flex-shrink: 0;
 	flex-wrap: wrap;
 	margin-top: 50px;
-}
-
-.contato-imagem-lado {
-	flex-shrink: 0;
 }
 
 .opcao-sexo {
@@ -681,15 +685,20 @@ textarea {
 	margin-bottom: 20px;
 }
 
-.contato-nome label {
-	display: block;
+/*Informacoes de estilo do contato*/
+.contato-nome input {
+	flex-shrink: 0;
+	color: #191919;
+	background-color: #fff;
+	width: 250px;
+	align-items: center;
 }
 
 .contato-email input {
 	display: inline-block;
 	color: #191919;
 	background-color: #fff;
-	width: 300px;
+	width: 250px;
 	align-items: center;
 }
 
@@ -716,16 +725,24 @@ textarea {
 	box-shadow: 5px 5px 5px #9c1e2e;
 }
 
-.botao2-enviar {
+.contato-botao input {
 	margin-top: 10px;
 	width: 50%;
+	color: #fff;
+	background-color: #9c1e2e;
 }
 
 .contato-container h2 {
 	margin-bottom: 50px;
 }
 
+/*Imagem de criacao de conta */
 .imagem-criar-conta img {
 	margin-top: 50px;
 	align-items: center;
+}
+
+/*Botao de enviar*/
+.botao2-enviar {
+	box-shadow: none;
 }
