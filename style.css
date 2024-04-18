@@ -293,20 +293,22 @@ ul {
 /*Culinaria do parque*/
 .video {
 	margin-top: 30px;
-	border: 5px solid #191919;
 }
 
 .video video {
 	max-height: 600px;
+	border: 5px solid #191919;
+	border-radius: 10px;
 }
 
 .imagem-bebidas img {
 	max-width: 600px;
+	border: 5px solid #191919;
+	border-radius: 10px;
 }
 
 .imagem-bebidas {
 	margin-top: 30px;
-	border: 5px solid #191919;
 }
 
 .culinaria-japonesa {
