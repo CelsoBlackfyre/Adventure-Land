@@ -29,43 +29,39 @@
 			</nav>
 		</header>
 		<!--Titulo da pagina de login-->
-		<div class="container-login">
-			<div class="centro-login">
-				<h1>Login</h1>
-				<h2>ログイン</h2>
-				<!--Formulario de login-->
-				<form action="#" method="get">
-					<div class="email-form">
-						<label for="email"> E-mail: </label><br />
-						<input
-							type="email"
-							id="email"
-							name="email"
-							required
-							placeholder="Digite seu email" /><br />
-					</div>
-					<div class="senha-form">
-						<label for="senha">Senha:</label><br />
-						<input
-							type="password"
-							name="senha"
-							id="senha"
-							required
-							placeholder="Digite sua senha" /><br />
-					</div>
-					<div class="botao-logar-container">
-						<input type="submit" value="Logar" class="botao-ligar" />
-					</div>
-					<div class="botao-esqueci-container">
-						<a href="esquecisenha.html">
-							<input type="button" value="Esqueceu sua Senha ?" class="botao-esqueci" />
-						</a>
-					</div
-				</form>
-			</div>
-			<div class="imagem-login">
-				<img src="imgs/undrawjapan.svg" alt="japan imagem" />
-			</div>
+        <section class="container-principal-esqueci-senha">
+		<div class="container-esqueci-senha">
+            <h1>Recuperação de senha</h1>
+            <h2>パスワードの回復</h2>
+			<form action="#" method="get">
+                    <div class="container-esqueci">
+                        <div class="email-form">
+                            <label for="email"> Digite seu E-mail para trocar senha: </label><br />
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                placeholder="Digite seu email" /><br />
+                        </div>
+                        <div class="email-form">
+							<label for="endereco">Confirme seu email:</label><br />
+							<input
+								type="email"
+								id="email"
+								name="email"
+								required
+								placeholder="Confirme seu email" /><br />
+						</div>
+
+                    </form>
+                </div>
+                <div class="imagem-login">
+                    <img src="imgs/undrawjapan.svg" alt="japan imagem" />
+                </div>
+                    </div>
+                </section>
+            </form>
 		</div>
 		<!--Rodape do site-->
 		<footer class="rodape">
