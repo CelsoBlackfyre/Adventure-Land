@@ -775,3 +775,46 @@ textarea {
 	display: flex;
 	flex-direction: column;
 }
+
+@media (max-width: 1536px) {
+	.container-principal {
+		max-width: 1280px;
+	}
+
+	.header {
+		height: 90px;
+	}
+}
+
+@media (max-width: 1280px) {
+	.container-principal {
+		max-width: 1024px;
+	}
+	.header {
+		height: 80px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.container-principal {
+		max-width: 768px;
+	}
+}
+
+@media (max-width: 768px) {
+	.container-principal {
+		max-width: 640px;
+	}
+}
+
+@media (max-width: 640px) {
+	.container-principal {
+		max-width: 475px;
+	}
+}
+
+@media (max-width: 475px) {
+	.container-principal {
+		max-width: 100%;
+	}
+}
